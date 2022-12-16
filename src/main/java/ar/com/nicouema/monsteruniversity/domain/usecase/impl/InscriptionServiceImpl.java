@@ -80,7 +80,7 @@ public class InscriptionServiceImpl implements InscriptionService {
     @Override
     public InscriptionList getInscriptionsByMonsterLastname(String lastname, PageRequest pageRequest) {
         Page<Inscription> page = inscriptionRepository
-                .getAllByMonsterLastnameContainingIgnoreCase(lastname, pageRequest);
+                .getAllByMonster_LastnameContainingIgnoreCase(lastname, pageRequest);
         return new InscriptionList(page.getContent(), pageRequest, page.getTotalElements());
     }
 }

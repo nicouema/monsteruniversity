@@ -12,5 +12,5 @@ public interface InscriptionRepository extends PagingAndSortingRepository<Inscri
 
     Page<Inscription> getAllByCareer_Id(Long careerId, PageRequest pageRequest);
 
-    Page<Inscription> getAllByMonsterLastnameContainingIgnoreCase(String lastname, PageRequest pageRequest);
+    Page<Inscription> getAllByMonster_LastnameContainingIgnoreCase(String lastname, PageRequest pageRequest);
 }

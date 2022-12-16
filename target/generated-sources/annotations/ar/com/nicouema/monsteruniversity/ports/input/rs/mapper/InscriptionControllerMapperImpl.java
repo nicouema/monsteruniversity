@@ -30,10 +30,7 @@ public class InscriptionControllerMapperImpl implements InscriptionControllerMap
         if ( idType != null ) {
             inscriptionResponse.setNameIdType( String.valueOf( idType ) );
         }
-        Long id1 = inscriptionCareerId( inscription );
-        if ( id1 != null ) {
-            inscriptionResponse.setCareerDegree( String.valueOf( id1 ) );
-        }
+        inscriptionResponse.setCareerDegree( inscriptionCareerDegree( inscription ) );
         inscriptionResponse.setDate( inscription.getDate() );
 
         return inscriptionResponse;
@@ -91,7 +88,7 @@ public class InscriptionControllerMapperImpl implements InscriptionControllerMap
         return idType;
     }
 
-    private Long inscriptionCareerId(Inscription inscription) {
+    private String inscriptionCareerDegree(Inscription inscription) {
         if ( inscription == null ) {
             return null;
         }
@@ -99,10 +96,10 @@ public class InscriptionControllerMapperImpl implements InscriptionControllerMap
         if ( career == null ) {
             return null;
         }
-        Long id = career.getId();
-        if ( id == null ) {
+        String degree = career.getDegree();
+        if ( degree == null ) {
             return null;
         }
-        return id;
+        return degree;
     }
 }
