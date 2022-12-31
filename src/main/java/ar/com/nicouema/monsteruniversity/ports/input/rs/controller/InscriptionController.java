@@ -1,7 +1,7 @@
 package ar.com.nicouema.monsteruniversity.ports.input.rs.controller;
 
 import ar.com.nicouema.monsteruniversity.domain.model.Inscription;
-import ar.com.nicouema.monsteruniversity.domain.model.InscriptionList;
+import ar.com.nicouema.monsteruniversity.domain.model.list.InscriptionList;
 import ar.com.nicouema.monsteruniversity.domain.model.ids.MonsterId;
 import ar.com.nicouema.monsteruniversity.domain.usecase.InscriptionService;
 import ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants;

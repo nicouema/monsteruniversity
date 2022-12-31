@@ -14,7 +14,6 @@ import java.util.List;
 @Mapper
 public interface CareerControllerMapper {
 
-    @Mapping(target = "subjects", ignore = true)
     @Mapping(target = "id", ignore = true)
     @Mapping(target = "audit", ignore = true)
     @Mapping(target = "degree", source = "degree")

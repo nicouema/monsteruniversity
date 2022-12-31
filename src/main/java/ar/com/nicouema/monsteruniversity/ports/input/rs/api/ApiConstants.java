@@ -12,6 +12,10 @@ public interface ApiConstants {
 
     String INSCRIPTION_URI="/inscriptions";
 
+    String SUBJECT_FROM_CAREER_URI="/subjects-from-career";
+
+    String SUBJECT_URI="/subjects";
+
     Function<Integer, String> uriByPageAsString = (page) ->
             ServletUriComponentsBuilder.fromCurrentRequest()
                     .replaceQueryParam("page", page).toUriString();

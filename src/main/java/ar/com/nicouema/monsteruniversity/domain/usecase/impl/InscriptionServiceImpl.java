@@ -3,7 +3,7 @@ package ar.com.nicouema.monsteruniversity.domain.usecase.impl;
 import ar.com.nicouema.monsteruniversity.common.exception.NotFoundException;
 import ar.com.nicouema.monsteruniversity.domain.model.Career;
 import ar.com.nicouema.monsteruniversity.domain.model.Inscription;
-import ar.com.nicouema.monsteruniversity.domain.model.InscriptionList;
+import ar.com.nicouema.monsteruniversity.domain.model.list.InscriptionList;
 import ar.com.nicouema.monsteruniversity.domain.model.Monster;
 import ar.com.nicouema.monsteruniversity.domain.model.ids.InscriptionId;
 import ar.com.nicouema.monsteruniversity.domain.model.ids.MonsterId;

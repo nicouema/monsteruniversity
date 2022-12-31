@@ -1,5 +1,6 @@
-package ar.com.nicouema.monsteruniversity.domain.model;
+package ar.com.nicouema.monsteruniversity.domain.model.list;
 
+import ar.com.nicouema.monsteruniversity.domain.model.Career;
 import org.springframework.data.domain.PageImpl;
 import org.springframework.data.domain.Pageable;
 

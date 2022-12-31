@@ -1,7 +1,7 @@
 package ar.com.nicouema.monsteruniversity.domain.usecase.impl;
 
 import ar.com.nicouema.monsteruniversity.domain.model.Career;
-import ar.com.nicouema.monsteruniversity.domain.model.CareerList;
+import ar.com.nicouema.monsteruniversity.domain.model.list.CareerList;
 import ar.com.nicouema.monsteruniversity.domain.repository.CareerRepository;
 import ar.com.nicouema.monsteruniversity.domain.usecase.CareerService;
 import jakarta.transaction.Transactional;

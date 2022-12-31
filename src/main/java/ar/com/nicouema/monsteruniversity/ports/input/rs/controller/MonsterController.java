@@ -1,7 +1,7 @@
 package ar.com.nicouema.monsteruniversity.ports.input.rs.controller;
 
 import ar.com.nicouema.monsteruniversity.domain.model.Monster;
-import ar.com.nicouema.monsteruniversity.domain.model.MonsterList;
+import ar.com.nicouema.monsteruniversity.domain.model.list.MonsterList;
 import ar.com.nicouema.monsteruniversity.domain.model.ids.MonsterId;
 import ar.com.nicouema.monsteruniversity.domain.usecase.MonsterService;
 import ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants;
@@ -26,8 +26,6 @@ import java.net.URI;
 import java.util.List;
 import java.util.Optional;
 
-import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.DEFAULT_PAGE;
-import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.DEFAULT_PAGE_SIZE;
 import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.MONSTER_URI;
 import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.uriByPageAsString;
 

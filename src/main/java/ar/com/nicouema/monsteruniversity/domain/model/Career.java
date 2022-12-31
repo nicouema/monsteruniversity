@@ -39,13 +39,6 @@ public class Career implements Auditable {
 
     private String degree;
 
-    @ManyToMany()
-    @JoinTable(name = "career_subject",
-            joinColumns = @JoinColumn(name = "id_career", referencedColumnName = "id_career"),
-            foreignKey = @ForeignKey(name = "fk_id_career"),
-            inverseJoinColumns = @JoinColumn(name = "id_subject", referencedColumnName = "id_subject"),
-            inverseForeignKey = @ForeignKey(name = "fk_id_subject"))
-    private Set<Subject> subjects;
 
     @Embedded
     private Audit audit;

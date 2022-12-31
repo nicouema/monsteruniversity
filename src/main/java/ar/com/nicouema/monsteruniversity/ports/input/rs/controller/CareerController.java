@@ -1,7 +1,7 @@
 package ar.com.nicouema.monsteruniversity.ports.input.rs.controller;
 
 import ar.com.nicouema.monsteruniversity.domain.model.Career;
-import ar.com.nicouema.monsteruniversity.domain.model.CareerList;
+import ar.com.nicouema.monsteruniversity.domain.model.list.CareerList;
 import ar.com.nicouema.monsteruniversity.domain.usecase.CareerService;
 import ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants;
 import ar.com.nicouema.monsteruniversity.ports.input.rs.api.CareerApi;
@@ -25,8 +25,6 @@ import java.util.List;
 import java.util.Optional;
 
 import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.CAREER_URI;
-import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.DEFAULT_PAGE;
-import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.DEFAULT_PAGE_SIZE;
 import static ar.com.nicouema.monsteruniversity.ports.input.rs.api.ApiConstants.uriByPageAsString;
 
 @RestController
