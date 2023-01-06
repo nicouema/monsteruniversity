@@ -81,7 +81,7 @@ public class SubjectPerCareerController implements SubjectPerCareerApi {
         subjectFromCareer.setId(id);
         service.addSubjectToCareer(subjectFromCareer);
 
-        URI location = ServletUriComponentsBuilder.fromCurrentRe quest()
+        URI location = ServletUriComponentsBuilder.fromCurrentRequest()
                 .build().toUri();
 
         return ResponseEntity.created(location).build();
